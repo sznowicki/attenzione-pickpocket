@@ -1,0 +1,16 @@
+{
+  "name": "@sznowicki/attentione-pickpocket",
+  "version": "0.0.1",
+  "author": "Szymon Nowicki <sznowicki@eskalacja.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vite --port 1234",
+    "build": "vite build",
+    "serve": "vite preview --port 1234"
+  },
+  "devDependencies": {
+    "sass": "^1.64.1",
+    "vite": "^4.4.7"
+  }
+}

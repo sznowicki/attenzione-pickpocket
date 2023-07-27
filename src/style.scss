@@ -1,0 +1,61 @@
+:root {
+    --color-background: #141414;
+    --color-text: #c4c4c4;
+}
+body, html {
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    padding: 1rem;
+}
+
+h1, p {
+    font-weight: 500;
+}
+
+button {
+    border: none;
+    background: linear-gradient(90deg, #ee1c9a 0%, #db0000 100%);
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    color: var(--color-text);
+    text-shadow: 0 1px 1px rgba(0,0,0, 1);
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        box-shadow: 0 0 16px rgba(255, 255, 255, 0.8);
+    }
+}
+main {
+    display: grid;
+    grid-template-areas: 1fr;
+    gap: 1rem;
+}
+.debugging {
+    display: grid;
+    grid-template-areas: 
+        "p p"
+        "v c";
+
+    p {
+        grid-area: p;
+    }
+
+    video {
+        grid-area: v;
+    
+    }
+
+    canvas {
+        grid-area: c;
+    }
+}
+video, canvas {
+    width: 100%;
+    height: auto;
+}

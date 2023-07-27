@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Attenzione Pickpocket - motion detector</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="styleSheet" href="./src/style.scss">
+        <script src="./src/index.js" type="module"></script>
+    </head>
+    <body>
+        <main>
+            <h1>Attenzione pickpocket!</h1>
+            <div class="intro">
+                <p>Fun project to make my dog stop stealing stuff from a dining table.</p>
+                <p>How it works: click the button, camera feed will start movement detection. Once movement is detected it would trigger the Venice Alarm.</p>
+            </div>
+            <button type="button">click to start</button>    
+            <section class="debugging">
+                <p>Once you hit the button, on the left you see a normal video feed. On the right, diff feed (mixed with normal one). WARNING: it might have rapid flashing frames.</p>
+                <video width="200" height="150" autoplay muted></video>
+                <canvas width="200" height="150"></canvas>
+            </section>         
+        </main>
+    </body>
+</html>
