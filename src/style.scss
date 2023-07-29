@@ -41,6 +41,7 @@ main {
     grid-template-areas: 
         "p p"
         "v c";
+    grid-template-rows: 1fr;
 
     p {
         grid-area: p;
